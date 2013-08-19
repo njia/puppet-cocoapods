@@ -1,4 +1,7 @@
 # This is a placeholder class.
-class template {
-  anchor { 'Hello_World': }
+class cocoapods {
+  package { 'cocoapods':
+    ensure   => 'installed',
+    provider => 'gem'
+  }
 }
