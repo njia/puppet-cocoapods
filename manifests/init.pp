@@ -1,7 +1,10 @@
-# This is a placeholder class.
+# Installs cocoapods
+#     Use: "include cocoapods"
 class cocoapods {
-  package { 'cocoapods':
-    ensure   => 'installed',
-    provider => 'gem'
+  require ruby::global
+
+  ruby::gem { 'cocoapods':
+    gem  => 'cocoapods',
+    ruby => $::ruby::global::version,
   }
 }
