@@ -13,6 +13,7 @@ include cocoapods
 ## Required Puppet Modules
 
 * `boxen`
+* `ruby`
 
 ## Development
 
