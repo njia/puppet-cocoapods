@@ -3,7 +3,7 @@
 class cocoapods {
   require ruby::global
 
-  ruby::gem { 'cocoapods':
+  ruby_gem { 'cocoapods':
     gem  => 'cocoapods',
     ruby => $::ruby::global::version,
   }
