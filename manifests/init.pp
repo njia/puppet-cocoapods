@@ -5,6 +5,6 @@ class cocoapods {
 
   ruby_gem { 'cocoapods':
     gem  => 'cocoapods',
-    ruby => $::ruby::global::version,
+    ruby_version => $::ruby::global::version,
   }
 }
